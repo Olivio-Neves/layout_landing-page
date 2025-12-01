@@ -126,12 +126,6 @@ body {
   color: #fff;
 }
 
-.banner::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.55));
-}
 
 .banner__content {
   position: relative;
