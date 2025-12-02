@@ -11,3 +11,10 @@ menuToggle.addEventListener('click', () => {
 closeSidebar.addEventListener('click', () => {
   sidebar.classList.remove('open');
 });
+
+const phoneButton = document.getElementById('phoneButton');
+const phoneNumber = document.getElementById('phoneNumber');
+
+phoneButton.addEventListener('click', () => {
+  phoneNumber.classList.toggle('show');
+});

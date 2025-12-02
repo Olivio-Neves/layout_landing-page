@@ -23,7 +23,8 @@
       <h1>MyBIKE</h1>
     </a>
     <nav class="nav-icons" aria-label="Ações rápidas">
-      <a href="tel:" class="icon-link" aria-label="Telefone">
+      <a href="javascript:void(0)" class="icon-link" id="phoneButton" aria-label="Telefone">
+        <span id="phoneNumber" class="phone-number">+1 234 5555-55-55</span>
         <img src="src/images/Vector.png" alt="Telefone" />
       </a>
       <button class="menu-toggle" type="button" aria-label="Abrir menu">
@@ -159,18 +160,23 @@
 </footer>
 
 <div class="sidebar" id="sidebar">
-  <button class="close-sidebar" id="closeSidebar" aria-label="Fechar menu">&times;</button>
-  <h1><strong>MyBike</strong></h1>
+  <div class="sidebar-header">
+    <h2>MyBIKE</h2>
+    <button class="close-sidebar" id="closeSidebar" aria-label="Fechar menu">&times;</button>
+  </div>
+
   <ul class="sidebar-menu">
     <li><a href="#">HOME</a></li>
     <li><a href="#">ABOUT US</a></li>
     <li><a href="#">COMPARE BIKES</a></li>
-    <li><a href="#">Details</a></li>
-    <li><a href="#">Contact</a></li>
+    <li><a href="#">DETAILS</a></li>
+    <li><a href="#">CONTACT</a></li>
   </ul>
+
   <p><strong>+1 234 5555-55-55</strong></p>
   <p><strong>BOOK A TEST RIDE</strong></p>
 </div>
+
 
   </body>
 </html>
