@@ -33,8 +33,13 @@ body {
 }
 
 .header {
-  background: $header-bg;
+  background: transparent;
   color: $text-color;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
 }
 
 .header .container {
@@ -69,10 +74,11 @@ body {
 .menu-toggle {
   appearance: none;
   border: 0;
-  background: rgba(255, 255, 255, 0.08);
+  background: none;
   color: $text-color;
-  width: 40px;
-  height: 40px;
+  width: auto;
+  height: auto;
+  padding: 0;
   border-radius: 10px;
   display: inline-flex;
   align-items: center;
@@ -98,7 +104,8 @@ body {
 
 .icon-link i,
 .menu-toggle i {
-  font-size: 18px;
+  font-size: 20px;
+  color: #fff;
 }
 
 @media (max-width: 480px) {
