@@ -12,9 +12,13 @@ closeSidebar.addEventListener('click', () => {
   sidebar.classList.remove('open');
 });
 
-const phoneButton = document.getElementById('phoneButton');
-const phoneNumber = document.getElementById('phoneNumber');
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.querySelector(".contact-form");
 
-phoneButton.addEventListener('click', () => {
-  phoneNumber.classList.toggle('show');
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    // eslint-disable-next-line no-undef
+    alert('Mensagem enviada!');
+  });
 });

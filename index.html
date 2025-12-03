@@ -23,10 +23,10 @@
       <h1>MyBIKE</h1>
     </a>
     <nav class="nav-icons" aria-label="Ações rápidas">
-      <a href="javascript:void(0)" class="icon-link" id="phoneButton" aria-label="Telefone">
-        <span id="phoneNumber" class="phone-number">+1 234 5555-55-55</span>
-        <img src="src/images/Vector.png" alt="Telefone" />
-      </a>
+      <a class="icon-link phone-wrapper" aria-label="Telefone">
+  <span class="phone-number">+1 234 5555-55-55</span>
+  <img src="src/images/Vector.png" alt="Telefone" />
+</a>
       <button class="menu-toggle" type="button" aria-label="Abrir menu">
         <img src="src/images/Icon-Burger-menu.png" alt="Abrir menu" />
       </button>
@@ -133,24 +133,35 @@
   <h2 class="contact-title">Contact us</h2>
   <div class="contact-content">
     <form class="contact-form">
-      <input type="text" placeholder="Name" class="form-input" />
-      <input type="email" placeholder="Email" class="form-input" />
-      <textarea placeholder="Message" class="form-textarea"></textarea>
+      <input type="text" placeholder="Name" class="form-input" required/>
+      <input type="email" placeholder="Email" class="form-input" required/>
+      <textarea placeholder="Message" class="form-textarea" required></textarea>
       <button type="submit" class="form-button">Send</button>
     </form>
     <div class="contact-info">
       <div class="info-group">
-        <h3 class="info-title">Phone</h3>
-        <p class="info-value">+1 234 5555-55-55</p>
-      </div>
-      <div class="info-group">
-        <h3 class="info-title">Email</h3>
-        <p class="info-value">hello@miami.com</p>
-      </div>
-      <div class="info-group">
-        <h3 class="info-title">Address</h3>
-        <p class="info-value">400 first ave.<br />suite 700<br />Minneapolis, MN 55401</p>
-      </div>
+  <h3 class="info-title">Phone</h3>
+  <p class="info-value"><a href="tel:+123455555555">+1 234 5555-55-55</a></p>
+</div>
+
+<div class="info-group">
+  <h3 class="info-title">Email</h3>
+  <p class="info-value"><a href="mailto:hello@miami.com">hello@miami.com</a></p>
+</div>
+
+<div class="info-group">
+  <h3 class="info-title">Address</h3>
+  <p class="info-value">
+    <a
+      href="https://www.google.com/maps/search/?api=1&query=400+first+ave,+suite+700,+Minneapolis,+MN+55401"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      400 first ave.<br />suite 700<br />Minneapolis, MN 55401
+    </a>
+  </p>
+</div>
+
     </div>
   </div>
 </section>

@@ -60,18 +60,34 @@ body {
   gap: 32px;
 }
 
-.phone-number {
-  display: none;
-  margin-left: 8px;
-  color: #fff;
-  font-size: 0.9rem;
-  transition: opacity 0.3s ease;
-  cursor: default;
+.phone-wrapper {
+  position: relative;
+
+  .phone-number {
+    display: none;
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.75);
+    padding: 6px 10px;
+    border-radius: 6px;
+    white-space: nowrap;
+
+    margin-left: 8px;
+    color: #fff;
+    font-size: 0.9rem;
+    transition: opacity 0.3s ease;
+    cursor: default;
+  }
+
+  &:hover {
+    .phone-number {
+      display: inline-block;
+    }
+  }
 }
 
-.phone-number.show {
-  display: inline;
-}
 
 .icon-link,
 .menu-toggle {
@@ -522,6 +538,16 @@ body {
   color: #e0e0e0;
 }
 
+.contact-info a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  color: #c2c2c2;
+
+}
+
 .footer {
   position: relative;
   width: 100%;
@@ -608,3 +634,8 @@ body {
 .sidebar .sidebar-menu li a:hover {
   color: #facc15;
 }
+
+.phone-wrapper {
+  position: relative;
+}
+
